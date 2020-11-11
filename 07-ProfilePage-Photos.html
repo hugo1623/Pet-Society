@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Profile Page - Friends</title>
+    <title>Pet Society</title>
 
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -233,6 +233,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- ... end Fixed Sidebar Left -->
@@ -269,7 +270,7 @@
                         </div>
                         <a href="02-ProfilePage.html" class="author-name fn">
                             <div class="author-title">
-                                James Spiegel <svg class="olymp-dropdown-arrow-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use></svg>
+                                Pet Society <svg class="olymp-dropdown-arrow-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use></svg>
                             </div>
                             <span class="author-subtitle">SPACE COWBOY</span>
                         </a>
@@ -2254,15 +2255,28 @@
             <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="ui-block responsive-flex">
                     <div class="ui-block-title">
-                        <div class="h6 title">Pet SOS Refugio Animal (86)</div>
-                        <form class="w-search">
-                            <div class="form-group with-button">
-                                <input class="form-control" type="text" placeholder="Buscar Amigos...">
-                                <button>
-								<svg class="olymp-magnifying-glass-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon"></use></svg>
-							</button>
-                            </div>
-                        </form>
+                        <div class="h6 title">Galeria de Fotos de <strong>  Pet SOS Refugio Animal</strong></div>
+
+                        <div class="block-btn align-right">
+                            <a href="#" data-toggle="modal" data-target="#create-photo-album" class="btn btn-primary btn-md-2">Crear Album  +</a>
+
+                            <a href="#" data-toggle="modal" data-target="#update-header-photo" class="btn btn-md-2 btn-border-think custom-color c-grey">Agregar Fotos</a>
+                        </div>
+
+                        <ul class="nav nav-tabs photo-gallery" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#photo-page" role="tab">
+                                    <svg class="olymp-photos-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-photos-icon"></use></svg>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#album-page" role="tab">
+                                    <svg class="olymp-albums-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-albums-icon"></use></svg>
+                                </a>
+                            </li>
+
+                        </ul>
                         <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
                     </div>
                 </div>
@@ -2270,708 +2284,1732 @@
         </div>
     </div>
 
-
-    <!-- Friends -->
-
     <div class="container">
         <div class="row">
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
+            <div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane" id="photo-page" role="tabpanel">
 
-                    <!-- Friend Item -->
+                        <div class="photo-album-wrapper">
 
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend1.jpg" alt="friend">
+
+
+                            <div class="photo-item half-width">
+                                <img src="img/photo-item1.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item2.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item3.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item4.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item5.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item6.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item7.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item8.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item9.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item10.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <div class="photo-item col-4-width">
+                                <img src="img/photo-item11.jpg" alt="photo">
+                                <div class="overlay overlay-dark"></div>
+                                <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>15</span>
+                                </a>
+                                <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                <div class="content">
+                                    <a href="#" class="h6 title">Fotos de Encabezado</a>
+                                    <time class="published" datetime="2017-03-24T18:18">Hace 1 semana</time>
+                                </div>
+                            </div>
+
+
+                            <a href="#" class="btn btn-control btn-more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+
                         </div>
 
-                        <div class="friend-item-content">
-
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar1.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Nicola Rebaza</a>
-                                    <div class="country">Porvenir</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container" data-slide="fade">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">52</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">240</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">16</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hola, soy Nicola y soy un Animalista realizo labores de rescate de animales.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Enero del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- ... end Friend Item -->
+                    <div class="tab-pane active" id="album-page" role="tabpanel">
+
+                        <div class="photo-album-wrapper">
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+                                <div class="photo-album-item create-album" data-mh="album-item">
+
+                                    <a href="#" data-toggle="modal" data-target="#create-photo-album" class="  full-block"></a>
+
+                                    <div class="content">
+
+                                        <a href="#" class="btn btn-control bg-primary" data-toggle="modal" data-target="#create-photo-album">
+                                            <svg class="olymp-plus-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-plus-icon"></use></svg>
+                                        </a>
+
+                                        <a href="#" class="title h5" data-toggle="modal" data-target="#create-photo-album">Crear un Álbum</a>
+                                        <span class="sub-title">Solo toma unos minutos!</span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-item2.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v2" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Campaña de Vacunación - Huanchaco </a>
+                                        <span class="sub-title">Agregado por última vez: Hace 2 horas</span>
+
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic5.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic7.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic8.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic2.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-album1.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Campaña de Esterilización - Esperanza </a>
+                                        <span class="sub-title">Agregado por última vez: Hace 1 horas</span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic5.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic7.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic8.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic2.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-album2.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Campaña de Rescate de Gatos </a>
+                                        <span class="sub-title">Last Added: 6 mins ago</span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-album3.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Campaña de voluntariado </a>
+                                        <span class="sub-title">Agregado por última vez: Hace 16 horas</span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic7.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic8.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic2.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-album4.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Adopcion de Gatos</a>
+                                        <span class="sub-title">Agregado por última vez: Hace 5 horas</span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic5.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic7.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic8.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic2.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar30-sm.jpg" alt="author">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar29-sm.jpg" alt="user">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar28-sm.jpg" alt="user">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar27-sm.jpg" alt="user">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="all-users">+3</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-item6.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5">Adopciión de Perros Esterilización</a>
+                                        <span class="sub-title">Agregado por última vez: Hace 9 horas</span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="photo-album-item-wrap col-4-width">
+
+
+                                <div class="photo-album-item" data-mh="album-item">
+                                    <div class="photo-item">
+                                        <img src="img/photo-album5.jpg" alt="photo">
+                                        <div class="overlay overlay-dark"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="post-add-icon">
+                                            <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                            <span>324</span>
+                                        </a>
+
+                                        <a href="#" data-toggle="modal" data-target="#open-photo-popup-v1" class="  full-block"></a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="#" class="title h5"> Esterilización de Mascotas - La esperanza</a>
+                                        <span class="sub-title">Agregado por última vez: Hace 9 horas </span>
+
+                                        <div class="swiper-container" data-slide="fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <ul class="friends-harmonic">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/friend-harmonic10.jpg" alt="friend">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar30-sm.jpg" alt="author">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="img/avatar29-sm.jpg" alt="user">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="friend-count" data-swiper-parallax="-500">
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">24</div>
+                                                            <div class="title">Fotos</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">86</div>
+                                                            <div class="title">Comentarios</div>
+                                                        </a>
+                                                        <a href="#" class="friend-count-item">
+                                                            <div class="h6">16</div>
+                                                            <div class="title">Compartir</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- If we need pagination -->
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
+        </div>
+    </div>
 
-                    <!-- Friend Item -->
 
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend2.jpg" alt="friend">
-                        </div>
 
-                        <div class="friend-item-content">
 
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar2.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Marina Valera</a>
-                                    <div class="country">Florencia de Mora - FM</div>
-                                </div>
-                            </div>
+    <!-- Window-popup Open Photo Popup V1 -->
 
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">52</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">240</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">16</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
+    <div class="modal fade modal-has-swiper" id="open-photo-popup-v1" tabindex="-1" role="dialog" aria-labelledby="open-photo-popup-v1" aria-hidden="true">
+        <div class="modal-dialog window-popup open-photo-popup open-photo-popup-v1" role="document">
+            <div class="modal-content">
+                <a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+                    <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+                </a>
 
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
+                <div class="modal-body">
+                    <div class="open-photo-thumb">
+                        <div class="swiper-container" data-slide="fade">
+                            <div class="swiper-wrapper">
 
-                                        </div>
-                                    </div>
+                                <div class="swiper-slide">
+                                    <div class="photo-item">
+                                        <img src="img/open-photo1.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
 
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Abril del 2014</div>
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
+                                <div class="swiper-slide">
+                                    <div class="photo-item">
+                                        <img src="img/open-photo1.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item">
+                                        <img src="img/open-photo1.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+                            <!--Prev Next Arrows-->
+
+                            <svg class="btn-next-without olymp-popup-right-arrow"><use xlink:href="svg-icons/sprites/icons.svg#olymp-popup-right-arrow"></use></svg>
+
+                            <svg class="btn-prev-without olymp-popup-left-arrow"><use xlink:href="svg-icons/sprites/icons.svg#olymp-popup-left-arrow"></use></svg>
                         </div>
                     </div>
 
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
+                    <div class="open-photo-content">
 
-                    <!-- Friend Item -->
+                        <article class="hentry post">
 
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend3.jpg" alt="friend">
-                        </div>
+                            <div class="post__author author vcard inline-items">
+                                <img src="img/author-page.jpg" alt="author">
 
-                        <div class="friend-item-content">
+                                <div class="author-date">
+                                    <a class="h6 post__author-name fn" href="02-ProfilePage.html">Pet Society</a>
+                                    <div class="post__date">
+                                        <time class="published" datetime="2017-03-24T18:18">
+										Hace 2 horas
+									</time>
+                                    </div>
+                                </div>
 
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
+                                <div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <ul class="more-dropdown">
+                                        <li>
+                                            <a href="#">Edit Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delete Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Turn Off Notifications</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Select as Featured</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <p>Here’s a photo from last month’s photoshoot. We really had a great time and got a batch of incredible shots for the new catalog.</p>
+
+                            <p>With: <a href="#">Jessy Owen</a>, <a href="#">Marina Valentine</a></p>
+
+                            <div class="post-additional-info inline-items">
+
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>148</span>
+                                </a>
+
+                                <ul class="friends-harmonic">
                                     <li>
-                                        <a href="#">Report Profile</a>
+                                        <a href="#">
+                                            <img src="img/friend-harmonic7.jpg" alt="friend">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Block Profile</a>
+                                        <a href="#">
+                                            <img src="img/friend-harmonic8.jpg" alt="friend">
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Turn Off Notifications</a>
+                                        <a href="#">
+                                            <img src="img/friend-harmonic9.jpg" alt="friend">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/friend-harmonic10.jpg" alt="friend">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/friend-harmonic11.jpg" alt="friend">
+                                        </a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar3.jpg" alt="author">
+
+                                <div class="names-people-likes">
+                                    <a href="#">Diana</a>, <a href="#">Nicholas</a> and
+                                    <br>13 more liked this
                                 </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Roger Vega</a>
-                                    <div class="country">La Esperanza - Trujillo</div>
+
+
+                                <div class="comments-shared">
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-speech-balloon-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-speech-balloon-icon"></use></svg>
+                                        <span>61</span>
+                                    </a>
+
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+                                        <span>32</span>
+                                    </a>
                                 </div>
+
+
                             </div>
 
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">49</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">132</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">5</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
+                            <div class="control-block-button post-control-button">
 
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-like-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-like-post-icon"></use></svg>
+                                </a>
 
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                </a>
+
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <div class="mCustomScrollbar" data-mcs-theme="dark">
+
+                            <ul class="comments-list">
+                                <li class="comment-item">
+                                    <div class="post__author author vcard inline-items">
+                                        <img src="img/avatar48-sm.jpg" alt="author">
+
+                                        <div class="author-date">
+                                            <a class="h6 post__author-name fn" href="#">Marina Valentine</a>
+                                            <div class="post__date">
+                                                <time class="published" datetime="2017-03-24T18:18">
+												46 mins ago
+											</time>
+                                            </div>
                                         </div>
+
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+
                                     </div>
 
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
+                                    <p>I had a great time too!! We should do it again!</p>
 
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Marzo del 2014</div>
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                        <span>8</span>
+                                    </a>
+                                    <a href="#" class="reply">Comenterios</a>
+                                </li>
+
+                                <li class="comment-item">
+                                    <div class="post__author author vcard inline-items">
+                                        <img src="img/avatar4-sm.jpg" alt="author">
+
+                                        <div class="author-date">
+                                            <a class="h6 post__author-name fn" href="#">Chris Greyson</a>
+                                            <div class="post__date">
+                                                <time class="published" datetime="2017-03-24T18:18">
+												1 hour ago
+											</time>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+
+                                    </div>
+
+                                    <p>Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                        <span>7</span>
+                                    </a>
+                                    <a href="#" class="reply">Comenterios</a>
+
+                                </li>
+                            </ul>
+
                         </div>
+
+                        <form class="comment-form inline-items">
+
+                            <div class="post__author author vcard inline-items">
+                                <img src="img/author-page.jpg" alt="author">
+
+                                <div class="form-group with-icon-right ">
+                                    <textarea class="form-control" placeholder="Press Enter to post..."></textarea>
+                                    <div class="add-options-message">
+                                        <a href="#" class="options-message">
+                                            <svg class="olymp-camera-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
                     </div>
-
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
-
-                    <!-- Friend Item -->
-
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend4.jpg" alt="friend">
-                        </div>
-
-                        <div class="friend-item-content">
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar4.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Christina Moncada</a>
-                                    <div class="country">El Alambre - Trujillo</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">65</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">104</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">12</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Octubre del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
-
-                    <!-- Friend Item -->
-
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend5.jpg" alt="friend">
-                        </div>
-
-                        <div class="friend-item-content">
-
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar5.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Elias Bustamante</a>
-                                    <div class="country">La Rinconada</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">82</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">204</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">27</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Diciembre del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
-
-                    <!-- Friend Item -->
-
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend6.jpg" alt="friend">
-                        </div>
-
-                        <div class="friend-item-content">
-
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar6.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Helen Moreno</a>
-                                    <div class="country">San Isidro-Trujillo</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">73</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">360</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">11</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Diciembre del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
-
-                    <!-- Friend Item -->
-
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend7.jpg" alt="friend">
-                        </div>
-
-                        <div class="friend-item-content">
-
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar7.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Diego Chimbor</a>
-                                    <div class="country">Los 4 Suyos - El Milagro</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">49</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">132</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">5</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Diciembre del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... end Friend Item -->
-                </div>
-            </div>
-            <div class="col col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="ui-block">
-
-                    <!-- Friend Item -->
-
-                    <div class="friend-item">
-                        <div class="friend-header-thumb">
-                            <img src="img/friend8.jpg" alt="friend">
-                        </div>
-
-                        <div class="friend-item-content">
-                            <div class="more">
-                                <svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
-                                <ul class="more-dropdown">
-                                    <li>
-                                        <a href="#">Report Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Block Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Turn Off Notifications</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="friend-avatar">
-                                <div class="author-thumb">
-                                    <img src="img/avatar8.jpg" alt="author">
-                                </div>
-                                <div class="author-content">
-                                    <a href="#" class="h5 author-name">Carol Reyna</a>
-                                    <div class="country">California</div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="friend-count" data-swiper-parallax="-500">
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">58</div>
-                                                <div class="title">Amigos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">304</div>
-                                                <div class="title">Fotos</div>
-                                            </a>
-                                            <a href="#" class="friend-count-item">
-                                                <div class="h6">19</div>
-                                                <div class="title">Videos</div>
-                                            </a>
-                                        </div>
-                                        <div class="control-block-button" data-swiper-parallax="-100">
-                                            <a href="#" class="btn btn-control bg-blue">
-                                                <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
-                                            </a>
-
-                                            <a href="#" class="btn btn-control bg-purple">
-                                                <svg class="olymp-chat---messages-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use></svg>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <p class="friend-about" data-swiper-parallax="-500">
-                                            Hi!, I’m Marina and I’m a Community Manager for “Gametube”. Gamer and full-time mother.
-                                        </p>
-
-                                        <div class="friend-since" data-swiper-parallax="-100">
-                                            <span>Amigos Desde:</span>
-                                            <div class="h6">Enero del 2014</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ... end Friend Item -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ... end Friends -->
+    <!-- ... end Window-popup Open Photo Popup V1 -->
+
+    <!-- Window-popup Open Photo Popup V2 -->
+
+    <div class="modal fade modal-has-swiper" id="open-photo-popup-v2" tabindex="-1" role="dialog" aria-labelledby="open-photo-popup-v2" aria-hidden="true">
+        <div class="modal-dialog window-popup open-photo-popup open-photo-popup-v2" role="document">
+            <div class="modal-content">
+                <a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+                    <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+                </a>
+
+                <div class="modal-body">
+                    <div class="open-photo-thumb">
+
+                        <div class="swiper-container" data-effect="fade" data-autoplay="4000">
+
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="photo-item" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/open-photo2.jpg" alt="photo">
+                                        <div class="overlay"></div>
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+                                        <a href="#" class="tag-friends" data-toggle="tooltip" data-placement="top" data-original-title="TAG YOUR FRIENDS">
+                                            <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                                        </a>
+
+                                        <div class="content">
+                                            <a href="#" class="h6 title">Photoshoot 2016</a>
+                                            <time class="published" datetime="2017-03-24T18:18">2 weeks ago</time>
+                                        </div>
+                                    </div>
+                                </div>
 
 
+                            </div>
+
+                        </div>
+
+                        <!--Pagination tabs-->
+
+                        <div class="slider-slides">
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs1.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs2.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs3.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs4.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs5.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs6.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs7.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs8.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <a href="#" class="slides-item ">
+                                <img src="img/photo-tabs9.jpg" alt="slide">
+                                <div class="overlay overlay-dark"></div>
+                            </a>
+
+                            <!--Prev Next Arrows-->
+
+                            <svg class="btn-next olymp-popup-right-arrow"><use xlink:href="svg-icons/sprites/icons.svg#olymp-popup-right-arrow"></use></svg>
+
+                            <svg class="btn-prev olymp-popup-left-arrow"><use xlink:href="svg-icons/sprites/icons.svg#olymp-popup-left-arrow"></use></svg>
+
+                        </div>
+
+                    </div>
+
+                    <div class="open-photo-content">
+
+                        <article class="hentry post">
+
+                            <div class="post__author author vcard inline-items">
+                                <img src="img/author-page.jpg" alt="author">
+
+                                <div class="author-date">
+                                    <a class="h6 post__author-name fn" href="02-ProfilePage.html">Pet Society</a>
+                                    <div class="post__date">
+                                        <time class="published" datetime="2017-03-24T18:18">
+								Hace 3 dias
+							</time>
+                                    </div>
+                                </div>
+
+                                <div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+                                    <ul class="more-dropdown">
+                                        <li>
+                                            <a href="#">Edit Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delete Post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Turn Off Notifications</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Select as Featured</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <p>La Municipalidad Provincial de Huanchaco, a través del personal de la Sub Gerencia de Sanidad y Vigilancia Sanitaria, realizó la primera jornada de vacunación veterinaria, correspondiente a noviembre. La actividad se realizó
+                                en el pueblo joven Saúl Cantoral y se logró vacunar a 80 perros y 35 gatos. Esta campaña de desparasitación y aplicación de vacuna antirrábica se realizó casa por casa. Las próximas jornadas se realizarán en los pueblos
+                                jóvenes San Martín, San Nicolás, Wilmer Fernández Malca y Santa Rosa. Ver menos</p>
+
+                            <p>Con: <a href="#">Danner Rebaza </a>, <a href="#">Elena de Rojas</a></p>
+
+                            <div class="post-additional-info inline-items">
+
+                                <a href="#" class="post-add-icon inline-items">
+                                    <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                    <span>148</span>
+                                </a>
 
 
+                                <div class="comments-shared">
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-speech-balloon-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-speech-balloon-icon"></use></svg>
+                                        <span>61</span>
+                                    </a>
+
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+                                        <span>32</span>
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="control-block-button post-control-button">
+
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-like-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-like-post-icon"></use></svg>
+                                </a>
+
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+                                </a>
+
+                                <a href="#" class="btn btn-control">
+                                    <svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <div class="mCustomScrollbar" data-mcs-theme="dark">
+
+                            <ul class="comments-list">
+                                <li class="comment-item">
+                                    <div class="post__author author vcard inline-items">
+                                        <img src="img/avatar48-sm.jpg" alt="author">
+
+                                        <div class="author-date">
+                                            <a class="h6 post__author-name fn" href="#">Marina Valentina</a>
+                                            <div class="post__date">
+                                                <time class="published" datetime="2017-03-24T18:18">
+										Hace 48 minutos
+									</time>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+
+                                    </div>
+
+                                    <p>Gracias por la informacion estere precnte!</p>
+
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                        <span>8</span>
+                                    </a>
+                                    <a href="#" class="reply">Comenterios</a>
+                                </li>
+
+                                <li class="comment-item">
+                                    <div class="post__author author vcard inline-items">
+                                        <img src="img/avatar4-sm.jpg" alt="author">
+
+                                        <div class="author-date">
+                                            <a class="h6 post__author-name fn" href="#">Jhon Rodriguez</a>
+                                            <div class="post__date">
+                                                <time class="published" datetime="2017-03-24T18:18">
+										Hace una Hora
+									</time>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg></a>
+
+                                    </div>
+
+                                    <p>Es una esplendida campaña la nuestros amigos de 4 patas</p>
+
+                                    <a href="#" class="post-add-icon inline-items">
+                                        <svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+                                        <span>7</span>
+                                    </a>
+                                    <a href="#" class="reply">Comenterios</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <form class="comment-form inline-items">
+
+                            <div class="post__author author vcard inline-items">
+                                <img src="img/avatar73-sm.jpg" alt="author">
+                                <div class="form-group with-icon-right ">
+                                    <textarea class="form-control" placeholder="Precione enter para Publicar..."></textarea>
+                                    <div class="add-options-message">
+                                        <a href="#" class="options-message">
+                                            <svg class="olymp-camera-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Window-popup Open Photo Popup V2 -->
+    <!-- Window-popup Create Photo Album -->
+
+    <div class="modal fade" id="create-photo-album" tabindex="-1" role="dialog" aria-labelledby="create-photo-album" aria-hidden="true">
+        <div class="modal-dialog window-popup create-photo-album" role="document">
+            <div class="modal-content">
+                <a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+                    <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
+                </a>
+
+                <div class="modal-header">
+                    <h6 class="title">Crear Album de Fotos</h6>
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="form-group label-floating">
+                        <label class="control-label">Nombre de Album</label>
+                        <input class="form-control" placeholder="" type="text" value="Adopciones de Mascotas - Trujillo">
+                    </form>
+
+                    <div class="photo-album-wrapper">
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item create-album" data-mh="album-item">
+                                <div class="content">
+                                    <a href="#" class="btn btn-control bg-primary">
+                                        <svg class="olymp-plus-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-plus-icon"></use></svg>
+                                    </a>
+
+                                    <a href="#" class="title h5">Agregar más Fotos...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item" data-mh="album-item">
+                                <div class="form-group">
+                                    <img src="img/photo-album6.jpg" alt="photo">
+                                    <textarea class="form-control" placeholder="Escribe algo sobre esta Foto..."></textarea>
+                                </div>
+
+                                <form class="form-group label-floating is-select">
+                                    <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+
+                                    <select class="selectpicker form-control style-2 show-tick" multiple data-max-options="2" data-live-search="true">
+								<option title="Green Goo Rock" data-content='<div class="inline-items">
+										<div class="author-thumb">
+											<img src="img/avatar52-sm.jpg" alt="author">
+										</div>
+											<div class="h6 author-title">Green Goo Rock</div>
+
+										</div>'>Green Goo Rock
+								</option>
+
+								<option title="Mathilda Brinker" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar74-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Mathilda Brinker</div>
+										</div>'>Mathilda Brinker
+								</option>
+
+								<option title="Marina Valentine" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar48-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Marina Valentine</div>
+										</div>'>Marina Valentine
+								</option>
+
+								<option title="Dave Marinara" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar75-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Dave Marinara</div>
+										</div>'>Dave Marinara
+								</option>
+
+								<option title="Rachel Howlett" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar76-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Rachel Howlett</div>
+										</div>'>Rachel Howlett
+								</option>
+
+							</select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item" data-mh="album-item">
+                                <div class="form-group">
+                                    <img src="img/photo-album7.jpg" alt="photo">
+                                    <textarea class="form-control" placeholder="Escribe algo sobre esta Foto..."></textarea>
+                                </div>
+                                <form class="form-group label-floating is-select">
+                                    <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+
+                                    <select class="selectpicker form-control style-2 show-tick" multiple data-max-options="2" data-live-search="true">
+								<option title="Green Goo Rock" data-content='<div class="inline-items">
+										<div class="author-thumb">
+											<img src="img/avatar52-sm.jpg" alt="author">
+										</div>
+											<div class="h6 author-title">Green Goo Rock</div>
+
+										</div>'>Green Goo Rock
+								</option>
+
+								<option title="Mathilda Brinker" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar74-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Mathilda Brinker</div>
+										</div>'>Mathilda Brinker
+								</option>
+
+								<option title="Marina Valentine" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar48-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Marina Valentine</div>
+										</div>'>Marina Valentine
+								</option>
+
+								<option title="Dave Marinara" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar75-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Dave Marinara</div>
+										</div>'>Dave Marinara
+								</option>
+
+								<option title="Rachel Howlett" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar76-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Rachel Howlett</div>
+										</div>'>Rachel Howlett
+								</option>
+
+							</select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item" data-mh="album-item">
+                                <div class="form-group">
+                                    <img src="img/photo-album8.jpg" alt="photo">
+                                    <textarea class="form-control" placeholder="Escribe algo sobre esta Foto..."></textarea>
+                                </div>
+
+                                <form class="form-group label-floating is-select">
+                                    <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+
+                                    <select class="selectpicker form-control style-2 show-tick" multiple data-max-options="2" data-live-search="true">
+								<option title="Green Goo Rock" data-content='<div class="inline-items">
+										<div class="author-thumb">
+											<img src="img/avatar52-sm.jpg" alt="author">
+										</div>
+											<div class="h6 author-title">Green Goo Rock</div>
+
+										</div>'>Green Goo Rock
+								</option>
+
+								<option title="Mathilda Brinker" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar74-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Mathilda Brinker</div>
+										</div>'>Mathilda Brinker
+								</option>
+
+								<option title="Marina Valentine" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar48-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Marina Valentine</div>
+										</div>'>Marina Valentine
+								</option>
+
+								<option title="Dave Marinara" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar75-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Dave Marinara</div>
+										</div>'>Dave Marinara
+								</option>
+
+								<option title="Rachel Howlett" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar76-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Rachel Howlett</div>
+										</div>'>Rachel Howlett
+								</option>
+
+							</select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item" data-mh="album-item">
+                                <div class="form-group">
+                                    <img src="img/photo-album9.jpg" alt="photo">
+                                    <textarea class="form-control" placeholder="Escribe algo sobre esta Foto..."></textarea>
+                                </div>
+
+                                <form class="form-group label-floating is-select">
+                                    <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+
+                                    <select class="selectpicker form-control style-2 show-tick" multiple data-max-options="2" data-live-search="true">
+								<option title="Green Goo Rock" data-content='<div class="inline-items">
+										<div class="author-thumb">
+											<img src="img/avatar52-sm.jpg" alt="author">
+										</div>
+											<div class="h6 author-title">Green Goo Rock</div>
+										</div>'>Green Goo Rock
+								</option>
+
+								<option title="Mathilda Brinker" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar74-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Mathilda Brinker</div>
+										</div>'>Mathilda Brinker
+								</option>
+
+								<option title="Marina Valentine" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar48-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Marina Valentine</div>
+										</div>'>Marina Valentine
+								</option>
+
+								<option title="Dave Marinara" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar75-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Dave Marinara</div>
+										</div>'>Dave Marinara
+								</option>
+
+								<option title="Rachel Howlett" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar76-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Rachel Howlett</div>
+										</div>'>Rachel Howlett
+								</option>
+
+							</select>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="photo-album-item-wrap col-3-width">
+                            <div class="photo-album-item" data-mh="album-item">
+                                <div class="form-group">
+                                    <img src="img/photo-album10.jpg" alt="photo">
+                                    <textarea class="form-control" placeholder="Escribe algo sobre esta Foto..."></textarea>
+                                </div>
+
+                                <form class="form-group label-floating is-select">
+                                    <svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+
+                                    <select class="selectpicker form-control style-2 show-tick" multiple data-max-options="2" data-live-search="true">
+								<option title="Green Goo Rock" data-content='<div class="inline-items">
+										<div class="author-thumb">
+											<img src="img/avatar52-sm.jpg" alt="author">
+										</div>
+											<div class="h6 author-title">Green Goo Rock</div>
+
+										</div>'>Green Goo Rock
+								</option>
+
+								<option title="Mathilda Brinker" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar74-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Mathilda Brinker</div>
+										</div>'>Mathilda Brinker
+								</option>
+
+								<option title="Marina Valentine" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar48-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Marina Valentine</div>
+										</div>'>Marina Valentine
+								</option>
+
+								<option title="Dave Marinara" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar75-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Dave Marinara</div>
+										</div>'>Dave Marinara
+								</option>
+
+								<option title="Rachel Howlett" data-content='<div class="inline-items">
+											<div class="author-thumb">
+												<img src="img/avatar76-sm.jpg" alt="author">
+											</div>
+											<div class="h6 author-title">Rachel Howlett</div>
+										</div>'>Rachel Howlett
+								</option>
+
+							</select>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-secondary btn-lg btn--half-width">Descartar Album</a>
+                    <a href="#" class="btn btn-primary btn-lg btn--half-width">Publicar Album</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... end Window-popup Create Photo Album -->
     <!-- Window-popup Update Header Photo -->
 
     <div class="modal fade" id="update-header-photo" tabindex="-1" role="dialog" aria-labelledby="update-header-photo" aria-hidden="true">
@@ -2982,23 +4020,22 @@
                 </a>
 
                 <div class="modal-header">
-                    <h6 class="title">Update Header Photo</h6>
+                    <h6 class="title">Actualizar Foto</h6>
                 </div>
 
                 <div class="modal-body">
                     <a href="#" class="upload-photo-item">
                         <svg class="olymp-computer-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-computer-icon"></use></svg>
 
-                        <h6>Upload Photo</h6>
-                        <span>Browse your computer.</span>
+                        <h6>Subir Foto</h6>
+                        <span>Elijir entre mis Fotos</span>
                     </a>
-
                     <a href="#" class="upload-photo-item" data-toggle="modal" data-target="#choose-from-my-photo">
 
                         <svg class="olymp-photos-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-photos-icon"></use></svg>
 
-                        <h6>Choose from My Photos</h6>
-                        <span>Choose from your uploaded photos</span>
+                        <h6>Elija entre Mis Fotos</h6>
+                        <span>Elijir entre mis Fotos</span>
                     </a>
                 </div>
             </div>
@@ -3018,7 +4055,7 @@
                     <svg class="olymp-close-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg>
                 </a>
                 <div class="modal-header">
-                    <h6 class="title">Choose from My Photos</h6>
+                    <h6 class="title">Elijir entre mis Fotos</h6>
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
